@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Application Form</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="top"></div>
+         <h1 class="text-center">Job Application</h1>
+         <form action="" method="post">
+            <h3>Personal Information</h3>
+            <div class="row">
+               <div class="title w-40">Name</div>
+               <div class="d-flex">
+                  <div class="form-control">
+                     <input type="text" name="fname"/>
+                     <small>First name</small>
+                  </div>
+                  <div class="form-control">
+                     <input type="text" name="lname"/>
+                     <small>Last name</small>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="title w-40">Email</div>
+               <div class="form-control">
+                  <input type="email" name="email" placeholder="user@example.com" size="40"/>
+               </div>
+            </div>
+            <div class="row">
+               <div class="title w-40">Education</div>
+               <div class="form-control w-30">
+                  <select name="education">
+                     <option value="null">Please choose</option>
+                     <option value="BSCS">BSCS</option>
+                     <option value="BSSE">BSSE</option>
+                     <option value="BSIT">BSIT</option>
+                  </select>
+               </div>
+            </div>
+            <div class="row">
+               <div class="title w-40">Resume</div>
+               <div class="">
+                  <input type="file" name="resume"/>
+               </div>
+            </div>
+            <div class="row">
+               <div class="title w-40">Address</div>
+               <div class=" d-flex display-column">
+                  <div class="form-control ">
+                     <input type="text" name="address1"/>
+                     <small class="text-center">Address1</small>
+                  </div>
+                  <div class="form-control">
+                     <input type="text" name="address2"/>
+                     <small class="text-center">Address2</small>
+                  </div>
+                  <div class="form-control">
+                     <select name="country">
+                        <option value="null">Select a country</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Pakistan">Pakistan</option>
+                     </select>
+                     <small class="text-center">Country</small>
+                  </div>
+                  <div class="d-flex">
+                     <div class="form-control">
+                        <input type="text" name="city" id="city" />
+                        <small>City</small>
+                     </div>
+                     <div class="form-control">
+                        <input type="text" name="state" id="state" size="5" />
+                        <small>State</small>
+                     </div>
+                     <div class="form-control">
+                        <input type="text" name="zipcode" id="zipcode" size="10"/>
+                        <small>Zipcode</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="title w-40">Phone</div>
+               <div class=" d-flex ">
+                  <div class="form-control">
+                     <input type="text" name="Phone" size="3"/>
+                  </div>
+                  <div class="form-control">
+                     <input type="text" name="Phone" size="40"/>  
+                  </div>
+               </div>
+            </div>
+            <div class="row display-column">
+               <div class="title w-40">What are your hobbies</div>
+               <div class="form-control w-100">
+                  <input type="text" name="hobbies"/>
+               </div>
+            </div>
+            <h3>Previous/Current Employment Details</h3>
+            <div class="row">
+               <div class="title w-40">Company Name</div>
+               <div class="form-control w-40">
+                  <input type="text" name="cname"/>
+               </div>
+            </div>
+            <div class="row">
+               <div class="title w-40">Job Title</div>
+               <div class="form-control w-40 ">
+                  <input type="text" name="jobTitle"/>
+               </div>
+            </div>
+            <div class="row">
+               <div class="title w-40">How long were you here</div>
+               <div class="form-control w-40 ">
+                  <input type="text" name="duration"/>
+               </div>
+            </div>
+            <h3>Refrence #1</h3>
+            <div class="row">
+               <div class="title w-40">Name</div>
+               <div class="form-control w-40 ">
+                  <input type="text" name="refName"/>
+               </div>
+            </div>
+            <div class="row">
+               <div class="title w-40">Phone</div>
+               <div class="form-control w-40 ">
+                  <input type="text" name="refPhone"/>
+               </div>
+            </div>
+            <h3>Refrence #2</h3>
+            <div class="row">
+               <div class="title w-40">Name</div>
+               <div class="form-control w-40 ">
+                  <input type="text" name="refName1"/>
+               </div>
+            </div>
+            <div class="row">
+               <div class="title w-40">Phone</div>
+               <div class="form-control w-40 ">
+                  <input type="text" name="refPhone1"/>
+               </div>
+            </div>
+            <div class="row justify-center">
+               <div class="btn-submit">
+                  <input type="submit" value="Apply"/>
+               </div>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
